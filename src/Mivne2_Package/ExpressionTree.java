@@ -1,19 +1,14 @@
 package Mivne2_Package;
 
 public class ExpressionTree {
-
-
     TreeNode root ;
 
     public ExpressionTree(String postFix){
         this.BuildExpressionTree(postFix);
-
     }
-
     public TreeNode getRoot(){
         return this.root;
     }
-
     public void BuildExpressionTree(String postfixExp){
         ExpTokenizer tokens = new ExpTokenizer(postfixExp);
         StackAsArray myStack = new StackAsArray();
